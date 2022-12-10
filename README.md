@@ -30,12 +30,24 @@ schemas:{
 
 create an user : http://localhost:3000/token {method:post, query: "no query need"}
 
-log in user :http://localhost:3000/user?phone="your phone number" {method:get, query: "need phone number"}
+log in user :http://localhost:3000/token?id="your token id number" {method:get, query: "need token id number"}
 
-update user : http://localhost:3000/user {method:put, body: "need phone number"}
+update user : http://localhost:3000/token {method:put, body: "need phone number"}
 
 delete user: http://localhost:3000/user?phone="phone number" {method:delete, query: "need phone number"}
 
-schemas :{}
-
+schemas :{
+    "firstName":"",
+    "phone":"",
+    "password":""
 }
+
+schemas for update:{
+    "id":"
+    "firstName":"",
+    "phone":"",
+    "password":""
+}
+}
+
+
